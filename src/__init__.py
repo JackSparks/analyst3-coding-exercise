@@ -1,0 +1,1 @@
+"""Deal sourcing exercise package."""
