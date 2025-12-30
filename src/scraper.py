@@ -67,7 +67,7 @@ def save_results_to_csv(results, output_dir="output"):
     # Define fields to save
     fieldnames = ["company_name", "website", "industry", "revenue", "scraped_content"]
 
-    with open(filename, "w", newline="") as f:
+    with open(filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
 
